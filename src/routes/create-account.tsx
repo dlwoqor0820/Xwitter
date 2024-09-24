@@ -9,6 +9,7 @@ import {
 import { SubmitHandler, useForm } from "react-hook-form";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../firebase";
+import GithubLogin from "../compnents/github-login";
 
 interface IFormInput {
   name: string;
@@ -55,6 +56,7 @@ export default function CreateAccount() {
         <SubmitButton type="submit" value="Create Account"></SubmitButton>
       </Form>
       <Link to="/login">Already have an account?</Link>
+      <GithubLogin />
     </Wrapper>
   );
 }

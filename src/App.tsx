@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/",
+        path: "/profile",
         element: <Profile />,
       },
     ],
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
   const init = async () => {
     await auth.authStateReady();
     setLoading(false);

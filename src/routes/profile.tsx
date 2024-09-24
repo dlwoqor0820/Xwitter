@@ -1,3 +1,12 @@
+import { Link } from "react-router-dom";
+import { Wrapper } from "../compnents/component-style";
+
 export default function Profile() {
-  return <h1>Profile</h1>;
+  return (
+    <Wrapper>
+      <h1>
+        Here is Profile &rarr; <Link to="/">Go to Home</Link>
+      </h1>
+    </Wrapper>
+  );
 }

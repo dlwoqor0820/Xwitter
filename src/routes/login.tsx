@@ -9,6 +9,7 @@ import {
   SubmitButton,
   Wrapper,
 } from "../compnents/component-style";
+import GithubLogin from "../compnents/github-login";
 
 interface IFormInput {
   email: string;
@@ -45,6 +46,7 @@ export default function Login() {
         <SubmitButton type="submit" value="Login"></SubmitButton>
       </Form>
       <Link to="/create-account">Create an Account</Link>
+      <GithubLogin />
     </Wrapper>
   );
 }
