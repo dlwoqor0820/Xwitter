@@ -1,7 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import { GithubButton, Logo } from "./component-style";
 import { GithubAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../firebase";
+import styled from "styled-components";
+
+const GithubButton = styled.button``;
+
+const Logo = styled.img`
+  height: 20px;
+`;
 
 export default function GithubLogin() {
   const navigate = useNavigate();
